@@ -1,0 +1,44 @@
+html,body {
+margin: 0;
+padding: 0;
+background-color: #282c34;
+color: whitesmoke;
+}
+
+.App {
+  height: 100vh;
+}
+
+.main-landing-div {
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;
+  background-image: url("../assets/earth-lights.jpg");
+}
+
+.foreground{
+  width: 100%;
+  top: 120px;
+  height: 80vh;
+  position: absolute;
+  background-image: url("../assets/stars.png");
+  background-size: contain;
+  	-webkit-animation: moveIt 100s linear infinite;
+}
+
+@-webkit-keyframes moveIt {
+  from {
+    background-position: 0vw;
+  }
+  to {
+    background-position: 100vw;
+  }
+}
+
+.landing-page-main-title {
+  text-align: center;
+margin-top: 14%;
+font-size: 160px;
+}
