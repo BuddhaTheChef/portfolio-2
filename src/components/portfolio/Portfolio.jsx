@@ -5,9 +5,7 @@ class Portfolio extends Component {
   render() {
     return (
       <div>
-      <div>
       <h1 className="landing-page-main-title">ALL Portfolio</h1>
-      </div>
       </div>
     );
   }
