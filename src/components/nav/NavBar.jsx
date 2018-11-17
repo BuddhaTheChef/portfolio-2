@@ -7,9 +7,15 @@ class NavBar extends Component {
     return (
       <div className="main-div-nav">
       <div className="sub-div-nav">
-      <Link to='/' className="links">Home</Link>
-      <Link to='/portfolio' header>Portfolio</Link>
-      <Link to='/about' name="about">About</Link>
+      <div className="links-div">
+      <p><Link className="links" to='/'>Home</Link></p>
+      </div>
+      <div className="links-div">
+      <p><Link className="links" to='/portfolio'>Portfolio</Link></p>
+      </div>
+      <div className="links-div">
+      <p><Link className="links" to='/about'>About</Link></p>
+      </div>
       </div>
       </div>
     );
