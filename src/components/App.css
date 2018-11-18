@@ -15,11 +15,12 @@ color: whitesmoke;
   z-index: 50;
   width: 200px;
   margin-top: 50px;
-  position: absolute;
+  position: fixed;
 }
 
 .sub-div-nav {
 width: 120px;
+scroll-behavior: smooth;
 }
 
 
@@ -34,7 +35,7 @@ width: 120px;
   -webkit-transition: width 0.3s ease-in-out;
   transition: width 0.3s ease-in-out;
   padding: 5px;
-  border-top-right-radius: 30%;
+  border-top-right-radius: 200px;
   border-bottom-right-radius: 5%;
 }
 
@@ -67,6 +68,8 @@ width: 120px;
 
 .super-div {
   height: inherit;
+  overflow-y: scroll;
+  scroll-behavior: smooth; 
 }
 
 .main-landing-div {
@@ -109,8 +112,10 @@ font-size: 160px;
 }
 
 .main-portfolio-div {
-  background-color: lightgreen;
+  background-color: grey;
   height: 100vh;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
 }
 
 .main-about-div {
