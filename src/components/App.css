@@ -115,12 +115,40 @@ text-shadow: 0 0 10px lime, 0 0 15px black;
 }
 
 .main-portfolio-div {
-  background-color: grey;
+  background-color:black;
   height: 100vh;
   scroll-behavior: smooth;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 
 .main-about-div {
   height: 100vh;
+}
+
+#wrapper {
+  width: 400px;
+  height: 267px;
+  border-radius: 70px;
+  border: 1px solid black;
+  overflow:hidden;
+  position:relative;
+  margin-left: 37%;
+  background-color: grey;
+}
+#image {
+  transition: all 1s ease;
+  width:100%;
+  height:100%;
+  font-size: 2px;
+  transform: scale(1);
+  position:relative;
+  left:0;
+  top:0;
+}
+#wrapper:active #image {
+  transform: scale(3);
+  -webkit-transform: scale(3);
+  left:450px;
+  font-size: 15px;
+  top:270px;
 }

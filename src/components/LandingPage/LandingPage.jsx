@@ -13,7 +13,21 @@ class LandingPage extends Component {
       </div>
       <div id="portfolio" className="main-portfolio-div">
       <h1 className="landing-page-main-title">ALL Portfolio</h1>
-      </div>
+     
+      <div id='wrapper'>
+       <div id='image'>
+       <div>
+         <h1>proj 1</h1>
+         <p>some deeets here</p>
+       </div>
+       <div>
+       <h1>proj 2</h1>
+         <p>some deeets here</p>
+       </div>
+       </div>
+     </div>
+     </div>
+
       <div id="about" className="main-about-div">
       <h1 className="landing-page-main-title">About me</h1>
       </div>
