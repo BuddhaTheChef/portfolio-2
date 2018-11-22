@@ -38,12 +38,14 @@ class LandingPage extends Component {
       </div>
       <footer className="footer-div">
         <h2 className="footer-title">Contact Me</h2>
+        <h2 className="footer-title">Location</h2>
+        <h2 className="footer-title">Other</h2>
         <div className="icon-finder-main-div">
-        <img className="icon-finder" src={linkedIn} alt="linkedIn"/>
-        <img className="icon-finder" src={github} alt="github"/>
-        <img className="icon-finder" src={mail} alt="mail"/>
-        <img className="icon-finder" src={twitter} alt="twitter"/>
-        <img className="icon-finder" src={website} alt="website"/>
+        <a href={"https://www.linkedin.com/in/ajwietechaii/"}><img className="icon-finder" src={linkedIn} alt="linkedIn"/></a>
+        <a href={"https://github.com/BuddhaTheChef"}><img className="icon-finder" src={github} alt="github"/></a>
+        <a href={"https://www.gmail.com"}><img className="icon-finder" src={mail} alt="mail"/></a>
+        <a href={"https://www.google.com"}><img className="icon-finder" src={twitter} alt="twitter"/></a>
+        <a href={"http://www.ajwietecha.com/"}><img className="icon-finder" src={website} alt="website"/></a>
         </div>
       </footer>
       </div>
