@@ -37,9 +37,23 @@ class LandingPage extends Component {
       <h1 className="landing-page-main-title">About me</h1>
       </div>
       <footer className="footer-div">
-        <h2 className="footer-title">Contact Me</h2>
-        <h2 className="footer-title">Location</h2>
-        <h2 className="footer-title">Other</h2>
+      <div style={{display:'-webkit-inline-box'}}> 
+      <div style={{width: 'fit-content', maxWidth: '333px'}}>
+      <h2 className="footer-title">Contact Me</h2>
+        <p style={{fontSize: '20px'}}>Phone Number:(123)456-7890</p>
+        <p style={{fontSize: '20px'}}>Email: abc@def.com </p>
+        <p style={{fontSize: '20px'}}>LinkedIn: cool@linkedin.com </p>
+        </div>
+      <div style={{width: 'fit-content', maxWidth: '290px'}}>
+       <h2 className="footer-title">Location</h2>
+       <p style={{fontSize: '40px'}}>Seattle, WA 12345 Place 92201</p>
+       </div>
+      <div style={{width: 'fit-content', maxWidth: '290px'}}> 
+      <h2 className="footer-title">Other</h2>
+      <p style={{fontSize: '28px'}}>This is where you put any other intresting info about yourself or you end with something intresting</p>
+      </div>
+      </div>
+     
         <div className="icon-finder-main-div">
         <a href={"https://www.linkedin.com/in/ajwietechaii/"}><img className="icon-finder" src={linkedIn} alt="linkedIn"/></a>
         <a href={"https://github.com/BuddhaTheChef"}><img className="icon-finder" src={github} alt="github"/></a>
