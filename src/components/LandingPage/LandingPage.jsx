@@ -40,17 +40,23 @@ class LandingPage extends Component {
       <div style={{display:'-webkit-inline-box'}}> 
       <div style={{width: 'fit-content', maxWidth: '333px'}}>
       <h2 className="footer-title">Contact Me</h2>
+      <div className="footer-content-div">
         <p style={{fontSize: '20px'}}>Phone Number:(123)456-7890</p>
         <p style={{fontSize: '20px'}}>Email: abc@def.com </p>
         <p style={{fontSize: '20px'}}>LinkedIn: cool@linkedin.com </p>
-        </div>
+      </div>
+      </div>
       <div style={{width: 'fit-content', maxWidth: '290px'}}>
-       <h2 className="footer-title">Location</h2>
-       <p style={{fontSize: '40px'}}>Seattle, WA 12345 Place 92201</p>
+       <h2 className="footer-title" style={{marginLeft: '22px'}}>Location</h2>
+       <div className="footer-content-div">
+          <p style={{fontSize: '30px'}}>Seattle, WA 12345 Place 92201</p>
+       </div>
        </div>
       <div style={{width: 'fit-content', maxWidth: '290px'}}> 
-      <h2 className="footer-title">Other</h2>
+      <h2 className="footer-title" style={{marginLeft: '58px'}}>Other</h2>
+      <div className="footer-content-div">
       <p style={{fontSize: '28px'}}>This is where you put any other intresting info about yourself or you end with something intresting</p>
+      </div>
       </div>
       </div>
      
