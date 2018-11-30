@@ -175,7 +175,7 @@ text-shadow: 0 0 10px lime, 0 0 15px black;
 .footer-title {
   font-size: 50px;
   margin: 0;
-  padding: 16px;
+  padding: 16px 16px 0px 16px;
   display: inline-block;
   width: 300px;
   margin-left: 10px;
@@ -188,4 +188,34 @@ text-shadow: 0 0 10px lime, 0 0 15px black;
   color: rgb(66,66,66);
   font-family: sans-serif;
   font-style: oblique;
+}
+
+.about-main-div {
+  display: flex;
+  justify-content: space-evenly;
+  height: inherit;
+}
+
+.about-image-div {
+  background: aqua;
+  width: 450px;
+  height: 450px;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  display: inline-flex;
+  font-size: 25px;
+  border: solid 2px dimgrey;
+  border-radius: 50%;
+  box-shadow: 0px 10px 30px 4px rgba(0, 0, 0, 0.43);
+}
+
+.about-content-div {
+    width: 46%;
+    display: inline-flex;
+    background: dimgrey;
+    height: 50%;
+    border: solid aqua 2px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 30px 4px rgba(0, 0, 0, 0.43);
 }

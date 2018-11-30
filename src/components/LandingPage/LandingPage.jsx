@@ -35,7 +35,17 @@ class LandingPage extends Component {
 
       <div id="about" className="main-about-div">
       <h1 className="landing-page-main-title">About me</h1>
+      <div className="about-main-div">
+      <div className="about-image-div">
+        Nice quality pic :)
       </div>
+      <div className="about-content-div">
+        description about yourself
+      </div>
+      </div>
+      </div>
+
+
       <footer className="footer-div">
       <div style={{display:'-webkit-inline-box'}}> 
       <div style={{width: 'fit-content', maxWidth: '333px'}}>
@@ -49,13 +59,13 @@ class LandingPage extends Component {
       <div style={{width: 'fit-content', maxWidth: '290px'}}>
        <h2 className="footer-title" style={{marginLeft: '22px'}}>Location</h2>
        <div className="footer-content-div">
-          <p style={{fontSize: '30px'}}>Seattle, WA 12345 Place 92201</p>
+          <p style={{fontSize: '30px', marginTop: '15px'}}>Seattle, WA 12345 Place 92201</p>
        </div>
        </div>
       <div style={{width: 'fit-content', maxWidth: '290px'}}> 
       <h2 className="footer-title" style={{marginLeft: '58px'}}>Other</h2>
       <div className="footer-content-div">
-      <p style={{fontSize: '28px'}}>This is where you put any other intresting info about yourself or you end with something intresting</p>
+      <p style={{fontSize: '28px', marginTop: '15px'}}>This is where you put any other intresting info about yourself or you end with something intresting</p>
       </div>
       </div>
       </div>
