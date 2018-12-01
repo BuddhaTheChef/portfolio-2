@@ -121,10 +121,6 @@ text-shadow: 0 0 10px lime, 0 0 15px black;
   /* overflow-y: scroll; */
 }
 
-.main-about-div {
-  height: 100vh;
-}
-
 #wrapper {
   width: 400px;
   height: 267px;
@@ -190,32 +186,79 @@ text-shadow: 0 0 10px lime, 0 0 15px black;
   font-style: oblique;
 }
 
-.about-main-div {
+
+/* //////////// About Div////////////////////// */
+
+
+.about-main-title {
   display: flex;
-  justify-content: space-evenly;
-  height: inherit;
+  margin-left: 74px;
+  margin-top: 0;
+  position: absolute;
+  font-size: 160px;
+  text-shadow: 0 0 10px lime, 0 0 15px black;
 }
 
-.about-image-div {
-  background: aqua;
-  width: 450px;
-  height: 450px;
-  justify-content: center;
+.parent {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.child {
+  min-height: 20px;
+  padding: 15px;
+  transform: skewY(-30deg);
+  transition: all 0.2s ease;
+  display: flex;
+  align-content: center;
   align-items: center;
-  color: black;
-  display: inline-flex;
-  font-size: 25px;
-  border: solid 2px dimgrey;
-  border-radius: 50%;
-  box-shadow: 0px 10px 30px 4px rgba(0, 0, 0, 0.43);
 }
 
-.about-content-div {
-    width: 46%;
-    display: inline-flex;
-    background: dimgrey;
-    height: 50%;
-    border: solid aqua 2px;
-    border-radius: 8px;
-    box-shadow: 0px 10px 30px 4px rgba(0, 0, 0, 0.43);
+.child:hover {
+  height: calc(100% - 40px);
+}
+
+.child:hover~.child {
+  height: 20px;
+}
+
+.child__inner {
+  transform: skewY(30deg);
+  color: rgb(66,66,66);
+  font-size: 30px;
+}
+
+.child--top {
+  background: tomato;
+  height: calc(50% - 20px);
+  margin-top: calc((150px / 1.73)* -1);
+  padding-top: calc((150px / 1.73) * 2);
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.child--middle {
+  background: yellow;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.child--bottom {
+  background: rgb(234, 181, 68);
+  height: calc(50% - 20px);
+  margin-bottom: calc((150px / 1.73)* -1);
+  padding-bottom: calc((150px / 1.73) * 2);
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-description {
+font-size: 22px;
 }
