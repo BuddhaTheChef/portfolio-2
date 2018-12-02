@@ -169,12 +169,12 @@ text-shadow: 0 0 10px lime, 0 0 15px black;
 }
 
 .footer-title {
-  font-size: 50px;
+  font-size: 25px;
   margin: 0;
   padding: 16px 16px 0px 16px;
   display: inline-block;
   width: 300px;
-  margin-left: 10px;
+  margin-left: 80px;
   color: rgb(66,66,66);
   font-family: sans-serif;
 }
@@ -233,32 +233,41 @@ text-shadow: 0 0 10px lime, 0 0 15px black;
 }
 
 .child--top {
-  background: tomato;
+  background:rgb(3, 188, 139);
   height: calc(50% - 20px);
-  margin-top: calc((150px / 1.73)* -1);
+  margin-top: calc((693px / 1.33)* -1);
   padding-top: calc((150px / 1.73) * 2);
   display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 0;
 }
 
 .child--middle {
-  background: yellow;
+
   display: flex;
+  background: dimgray;
     justify-content: center;
     align-items: center;
+    z-index: 1;
+
 }
 
 .child--bottom {
-  background: rgb(234, 181, 68);
+  background: whitesmoke;
   height: calc(50% - 20px);
   margin-bottom: calc((150px / 1.73)* -1);
-  padding-bottom: calc((150px / 1.73) * 2);
+  padding-bottom: calc((150px / 1.73) * 3);
   display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 2;
 }
 
 .about-description {
 font-size: 22px;
+width: 840px;
+margin-top: 433px;
+    padding: 87px;
+    padding-right: 585px;
 }

@@ -39,7 +39,16 @@ class LandingPage extends Component {
   <div className="child child--top">
     <div className="child__inner">
     <p className="about-description">
-     Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece
+      <span style={{fontWeight:'bold'}}>About Me: </span>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece
+      of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,
+       a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure 
+       Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word
+        in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 
+        1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero,
+         written in 45 BC. This book is a treatise on the theory of ethics, very popular during the 
+         Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in
+          section 1.10.32.
+          Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece
       of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,
        a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure 
        Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word
@@ -53,12 +62,11 @@ class LandingPage extends Component {
   </div>
   <div className="child child--middle">
     <div className="child__inner">
-      Full Stack Developer 
+       
     </div>
   </div>
   <div className="child child--bottom">
     <div className="child__inner">
-    Picture :)
     </div>
   </div>
 </div>
@@ -70,21 +78,21 @@ class LandingPage extends Component {
       <div style={{width: 'fit-content', maxWidth: '333px'}}>
       <h2 className="footer-title">Contact Me</h2>
       <div className="footer-content-div">
-        <p style={{fontSize: '20px'}}>Phone Number:(123)456-7890</p>
-        <p style={{fontSize: '20px'}}>Email: abc@def.com </p>
-        <p style={{fontSize: '20px'}}>LinkedIn: cool@linkedin.com </p>
+        <p style={{fontSize: '17px'}}>Phone Number:(123)456-7890</p>
+        <p style={{fontSize: '17xpx'}}>Email: abc@def.com </p>
+        <p style={{fontSize: '17px'}}>LinkedIn: cool@linkedin.com </p>
       </div>
       </div>
-      <div style={{width: 'fit-content', maxWidth: '290px'}}>
+      <div style={{width: 'fit-content', maxWidth: '180px'}}>
        <h2 className="footer-title" style={{marginLeft: '22px'}}>Location</h2>
        <div className="footer-content-div">
-          <p style={{fontSize: '30px', marginTop: '15px'}}>Seattle, WA 12345 Place 92201</p>
+          <p style={{fontSize: '17px', marginTop: '15px'}}>Seattle, WA 12345 Place 92201</p>
        </div>
        </div>
       <div style={{width: 'fit-content', maxWidth: '290px'}}> 
-      <h2 className="footer-title" style={{marginLeft: '58px'}}>Other</h2>
+      <h2 className="footer-title" style={{marginLeft: ''}}>Other</h2>
       <div className="footer-content-div">
-      <p style={{fontSize: '28px', marginTop: '15px'}}>This is where you put any other intresting info about yourself or you end with something intresting</p>
+      <p style={{fontSize: '17px', marginTop: '15px'}}>This is where you put any other intresting info about yourself or you end with something intresting</p>
       </div>
       </div>
       </div>
