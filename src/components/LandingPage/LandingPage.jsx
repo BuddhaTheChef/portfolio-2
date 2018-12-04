@@ -16,22 +16,39 @@ class LandingPage extends Component {
       <h2 className="landing-page-skills">- React - Redux - Angular - Node - Express - SQL - Firebase -</h2>
       </div>
       </div>
+
+
       <div id="portfolio" className="main-portfolio-div">
-      <h1 className="landing-page-main-title">ALL Portfolio</h1>
+      {/* <h1 className="landing-page-main-title">ALL Portfolio</h1> */}
      
-      <div id='wrapper'>
-       <div id='image'>
-       <div>
-         <h1>proj 1</h1>
-         <p>some deeets here</p>
+       {/* topDiv */}
+       <div className="top-portfolio-div">
+         <div className="sub-portfolio-div">Proj 1</div>
+         <div className="sub-portfolio-div">Proj 2</div>
+         <div className="sub-portfolio-div">Proj 3</div>
+         <div className="sub-portfolio-div">Proj 4</div>
+         <div className="sub-portfolio-div">Proj 5</div>
+         <div className="sub-portfolio-div">Proj 6</div>
        </div>
-       <div>
-       <h1>proj 2</h1>
-         <p>some deeets here</p>
+       <div className="top-portfolio-div" style={{background: 'darkgrey'}}>
+         <div className="sub-portfolio-div">Proj 7</div>
+         <div className="sub-portfolio-div">Proj 8</div>
+         <div className="sub-portfolio-div">Proj 9</div>
+         <div className="sub-portfolio-div">Proj 10</div>
+         <div className="sub-portfolio-div">Proj 11</div>
+         <div className="sub-portfolio-div">Proj 12</div>
        </div>
+       {/* BotDiv */}
+       <div className="top-portfolio-div" style={{background: 'purple'}}>
+       <div className="sub-portfolio-div">Proj 13</div>
+       <div className="sub-portfolio-div">Proj 14</div>
+       <div className="sub-portfolio-div">Proj 15</div>
+       <div className="sub-portfolio-div">Proj 16</div>
+       <div className="sub-portfolio-div">Proj 17</div>
+       <div className="sub-portfolio-div">Proj 18</div>
        </div>
      </div>
-     </div>
+    
     {/* /// */}
 
     <div id="about" className="parent">
