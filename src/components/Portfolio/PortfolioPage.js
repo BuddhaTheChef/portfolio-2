@@ -5,7 +5,11 @@ const PortfolioPage = () => (
     {/* topDiv */}
     <div className="top-portfolio-div">
       <div className="sub-portfolio-div">Proj 1</div>
-      <div className="sub-portfolio-div">Proj 2</div>
+      <div className="sub-portfolio-div">
+        <div className="overlay">
+        Proj 2
+        </div>
+      </div>
       <div className="sub-portfolio-div">Proj 3</div>
       <div className="sub-portfolio-div">Proj 4</div>
       <div className="sub-portfolio-div">Proj 5</div>
