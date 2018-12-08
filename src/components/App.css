@@ -12,7 +12,7 @@ color: whitesmoke;
 /* //////////////////////////////////Nav bar///////////////////////////////////////////////////////// */
 
 .main-div-nav {
-  z-index: 50;
+  z-index: 60;
   width: 200px;
   margin-top: 50px;
   position: fixed;
@@ -79,7 +79,7 @@ scroll-behavior: smooth;
   color: whitesmoke
 }
 
-/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////Landing///////////////////////////////////////////////////////// */
 
 .super-div {
   height: inherit;
@@ -127,12 +127,6 @@ text-shadow: 0 0 10px #663399, 0 0 15px black;
   font-size: 30px;
 }
 
-.main-portfolio-div {
-  background-color:black;
-  height: 100vh;
-  scroll-behavior: smooth;
-  /* overflow-y: scroll; */
-}
 
 #wrapper {
   width: 400px;
@@ -162,45 +156,55 @@ text-shadow: 0 0 10px #663399, 0 0 15px black;
   top:270px;
 }
 
-.footer-div {
-  height: 310px;
-  background-color: rgb(3, 188, 139);
+
+/* ///////////////////////////////Portfolio/////////////////////////////// */
+
+.main-portfolio-div {
+  background-color:black;
+  height: 100vh;
+  scroll-behavior: smooth;
+  z-index: 50;
+  position: relative;
 }
 
-.icon-finder-main-div {
+.top-portfolio-div {
+  height: 33.333333vh;
+  background:rgb(3, 188, 139);
   display: flex;
-  justify-content: space-between;
-  width: 400px;
-  float: right;
-  padding: 38px;
-  margin-top: 164px;
-}
-
-.icon-finder {
-  width: 60px;
-  height: 60px;
-}
-
-.footer-title {
   font-size: 25px;
-  margin: 0;
-  padding: 16px 16px 0px 16px;
-  display: inline-block;
-  width: 300px;
-  margin-left: 80px;
-  color: rgb(66,66,66);
-  font-family: sans-serif;
+  align-items: center;
 }
 
-.footer-content-div {
-  text-align: center;
-  color: rgb(66,66,66);
-  font-family: sans-serif;
-  font-style: oblique;
+.sub-portfolio-div {
+  height: 100%;
+    width: 16.6666667%;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    display: flex;
+    border: solid 1px#663399;
+    position: relative;
 }
 
+.overlay {
+  opacity:0;
+}
 
-/* //////////// About Div////////////////////// */
+.sub-portfolio-div:hover .overlay{
+  width: 100%;
+  position: absolute;
+  transition: .5s ease;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #663399;    
+  opacity: 1;
+  transform: scale(1.1);
+  box-shadow: 0px 10px 30px 4px rgba(0, 0, 0, 0.43);
+}
+
+/* //////////// About////////////////////// */
 
 
 .about-main-title {
@@ -285,42 +289,41 @@ margin-top: 433px;
     padding-right: 585px;
 }
 
+/* ///////////////////////////////Footer/////////////////////////////// */
 
-/* ///////////////////////////////Portfolio/////////////////////////////// */
+.footer-div {
+  height: 310px;
+  background-color: rgb(3, 188, 139);
+}
 
-.top-portfolio-div {
-  height: 33.333333vh;
-  background:rgb(3, 188, 139);
+.icon-finder-main-div {
   display: flex;
+  justify-content: space-between;
+  width: 400px;
+  float: right;
+  padding: 38px;
+  margin-top: 164px;
+}
+
+.icon-finder {
+  width: 60px;
+  height: 60px;
+}
+
+.footer-title {
   font-size: 25px;
-  align-items: center;
+  margin: 0;
+  padding: 16px 16px 0px 16px;
+  display: inline-block;
+  width: 300px;
+  margin-left: 80px;
+  color: rgb(66,66,66);
+  font-family: sans-serif;
 }
 
-.sub-portfolio-div {
-  height: 100%;
-    width: 16.6666667%;
-    justify-content: center;
-    align-items: center;
-    color: whitesmoke;
-    display: flex;
-    border: solid 1px#663399;
-    position: relative;
-}
-
-.overlay {
-  opacity:0.1;
-}
-
-.sub-portfolio-div:hover .overlay{
-  width: 100%;
-  position: absolute;
-  transition: .5s ease;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #663399;    
-  opacity: 1;
-  transform: scale(1.1);
-  box-shadow: 0px 10px 30px 4px rgba(0, 0, 0, 0.43);
+.footer-content-div {
+  text-align: center;
+  color: rgb(66,66,66);
+  font-family: sans-serif;
+  font-style: oblique;
 }
