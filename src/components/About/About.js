@@ -35,9 +35,18 @@ const About = () => (
     </div>
     <div className="child child--middle">
       <div className="child__inner" />
+      <div className="about-bot-mid-inner-div">
+         <h3>Full Stack Developer</h3> 
+         <p>An eye for design mixed with a crazy invenentor. Producing one of a kind work XD</p>
+      </div>
     </div>
+
+
     <div className="child child--bottom">
       <div className="child__inner" />
+        <div className="inner-bot-about-div">
+        HI
+        </div>
     </div>
   </div>
 );
