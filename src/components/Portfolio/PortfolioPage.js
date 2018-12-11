@@ -8,21 +8,21 @@ const PortfolioPage = () => (
       <div className="sub-portfolio-div">
       <div style={{position: "absolute"}}>Proj 1</div>
         <div className="overlay">
-        Proj 1 name
+        Yo
         </div>
       </div>
 
       <div className="sub-portfolio-div">
         <div style={{position: "absolute"}}>Proj 2</div>
         <div className="overlay">
-        Proj 2 name
+        How
         </div>
       </div>
 
       <div className="sub-portfolio-div">
       <div style={{position: "absolute"}}>Proj 3</div>
         <div className="overlay">
-        Proj 3 name
+        zit
         </div>
       </div>
       </div>
@@ -32,21 +32,21 @@ const PortfolioPage = () => (
       <div className="sub-portfolio-div">
       <div style={{position: "absolute"}}>Proj 4</div>
         <div className="overlay">
-        Proj 4 name
+        going
         </div>
       </div>
 
       <div className="sub-portfolio-div">
       <div style={{position: "absolute"}}>Proj 5</div>
         <div className="overlay">
-        Proj 5 name
+        brahdahh
         </div>
       </div>
 
       <div className="sub-portfolio-div">
       <div style={{position: "absolute"}}>Proj 6</div>
         <div className="overlay">
-        Proj 6 name
+        Chee!!
         </div>
       </div>
       </div>
