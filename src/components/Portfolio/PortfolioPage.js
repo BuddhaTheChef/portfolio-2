@@ -25,7 +25,10 @@ const PortfolioPage = () => (
         Proj 3 name
         </div>
       </div>
+      </div>
+    
 
+       <div className="top-portfolio-div">
       <div className="sub-portfolio-div">
       <div style={{position: "absolute"}}>Proj 4</div>
         <div className="overlay">
@@ -46,7 +49,7 @@ const PortfolioPage = () => (
         Proj 6 name
         </div>
       </div>
-    </div>
+      </div>
 
     {/* midDiv */}
     <div className="top-portfolio-div" style={{ background: "dimgray" }}>
@@ -70,6 +73,9 @@ const PortfolioPage = () => (
         Proj 9 name
         </div>
       </div>
+      </div>
+
+      <div className="top-portfolio-div" style={{ background: "dimgray" }}>
 
       <div className="sub-portfolio-div">
       <div style={{position: "absolute"}}>Proj 10</div>
@@ -92,6 +98,7 @@ const PortfolioPage = () => (
         </div>
       </div>
     </div>
+    
 
     {/* BotDiv */}
     <div className="top-portfolio-div" style={{ background: "#282c34" }}>
@@ -115,6 +122,9 @@ const PortfolioPage = () => (
         Proj 15 name
         </div>
       </div>
+      </div>
+
+      <div className="top-portfolio-div" style={{ background: "#282c34" }}>
 
       <div className="sub-portfolio-div">
       <div style={{position: "absolute"}}>Proj 16</div>

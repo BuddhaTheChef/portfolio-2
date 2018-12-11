@@ -168,7 +168,7 @@ text-shadow: 0 0 10px #663399, 0 0 15px black;
 }
 
 .top-portfolio-div {
-  height: 33.333333vh;
+  height: 162px;
   background:rgb(3, 188, 139);
   display: flex;
   font-size: 25px;
@@ -177,7 +177,7 @@ text-shadow: 0 0 10px #663399, 0 0 15px black;
 
 .sub-portfolio-div {
   height: 100%;
-    width: 16.6666667%;
+    width: 33.33333%;
     justify-content: center;
     align-items: center;
     color: whitesmoke;
