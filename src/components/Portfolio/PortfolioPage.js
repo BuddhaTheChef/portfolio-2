@@ -48,8 +48,13 @@ class PortfolioPage extends Component {
 
 
         <ReactModal className="Modal" overlayClassName="Overlay" isOpen={this.state.modalIsOpen}>
-          <p>Modal text 1!</p>
-          <button className='modal_close_button' onClick={this.closeModal}>X</button>
+        <h1>Modal 1 name</h1>
+        <button className='modal_close_button' onClick={this.closeModal}>X</button>
+        <h3>
+            Show modal in carousel or video  with some animation
+        </h3>
+          <p>Modal description!</p>
+          
         </ReactModal>
 
         
