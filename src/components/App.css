@@ -161,7 +161,7 @@ text-shadow: 0 0 10px #663399, 0 0 15px black;
 
 .main-portfolio-div {
   background-color:black;
-  height: 200vh;
+  height: fit-content;
   scroll-behavior: smooth;
   z-index: 50;
   position: relative;
@@ -173,6 +173,9 @@ text-shadow: 0 0 10px #663399, 0 0 15px black;
   display: flex;
   font-size: 25px;
   align-items: center;
+  margin-left: 40px;
+  margin-bottom: 40px;
+  margin-right: 40px;
 }
 
 .sub-portfolio-div {
