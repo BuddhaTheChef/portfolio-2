@@ -49,7 +49,7 @@ class PortfolioPage extends Component {
 
         <ReactModal className="Modal" overlayClassName="Overlay" isOpen={this.state.modalIsOpen}>
           <p>Modal text 1!</p>
-          <button onClick={this.closeModal}>Close Modal</button>
+          <button className='modal_close_button' onClick={this.closeModal}>X</button>
         </ReactModal>
 
         
@@ -63,7 +63,7 @@ class PortfolioPage extends Component {
 
         <ReactModal className="Modal" overlayClassName="Overlay" isOpen={this.state.modalIsOpen1}>
           <p>Modal text 2!</p>
-          <button onClick={this.closeModal1}>Close Modal</button>
+          <button className='modal_close_button' onClick={this.closeModal1}>X</button>
         </ReactModal>
 
         
@@ -77,7 +77,7 @@ class PortfolioPage extends Component {
 
                 <ReactModal className="Modal" overlayClassName="Overlay" isOpen={this.state.modalIsOpen2}>
           <p>Modal text 3!</p>
-          <button onClick={this.closeModal2}>Close Modal</button>
+          <button className='modal_close_button' onClick={this.closeModal2}>X</button>
         </ReactModal>
             
         
