@@ -6,6 +6,9 @@ class PortfolioPage extends Component {
         modalIsOpen: false,
         modalIsOpen1: false,
         modalIsOpen2: false,
+        modalIsOpen3: false,
+        modalIsOpen4: false,
+        modalIsOpen5: false,
     }
 
     openModal = () => {
@@ -31,6 +34,31 @@ class PortfolioPage extends Component {
       closeModal2 = () => {
         this.setState({modalIsOpen2: false});
       }
+
+       openModal3 = () => {
+        this.setState({modalIsOpen3: true});
+      }
+     
+      closeModal3 = () => {
+        this.setState({modalIsOpen3: false});
+      }
+      openModal4 = () => {
+        this.setState({modalIsOpen4: true});
+      }
+     
+      closeModal4 = () => {
+        this.setState({modalIsOpen4: false});
+      }
+
+      openModal5 = () => {
+        this.setState({modalIsOpen5: true});
+      }
+     
+      closeModal5 = () => {
+        this.setState({modalIsOpen5: false});
+      }
+     
+     
      
 
     render() {
@@ -89,25 +117,40 @@ class PortfolioPage extends Component {
                <div className="top-portfolio-div">
               <div className="sub-portfolio-div">
               <div style={{position: "absolute"}}>Proj 4</div>
-                <div className="overlay">
+                <div className="overlay" onClick={this.openModal3}>
                 going
                 </div>
               </div>
+
+        <ReactModal className="Modal" overlayClassName="Overlay" isOpen={this.state.modalIsOpen3}>
+          <p>Modal text 4!</p>
+          <button className='modal_close_button' onClick={this.closeModal3}>X</button>
+        </ReactModal>
         
               <div className="sub-portfolio-div">
               <div style={{position: "absolute"}}>Proj 5</div>
-                <div className="overlay">
+                <div className="overlay" onClick={this.openModal4}>
                 brahdahh
                 </div>
               </div>
+
+        <ReactModal className="Modal" overlayClassName="Overlay" isOpen={this.state.modalIsOpen4}>
+          <p>Modal text 5!</p>
+          <button className='modal_close_button' onClick={this.closeModal4}>X</button>
+        </ReactModal>
         
               <div className="sub-portfolio-div">
               <div style={{position: "absolute"}}>Proj 6</div>
-                <div className="overlay">
+                <div className="overlay" onClick={this.openModal5}>
                 Chee!!
                 </div>
               </div>
               </div>
+
+         <ReactModal className="Modal" overlayClassName="Overlay" isOpen={this.state.modalIsOpen5}>
+          <p>Modal text 6!</p>
+          <button className='modal_close_button' onClick={this.closeModal5}>X</button>
+        </ReactModal>
         
             {/* midDiv */}
             <div className="top-portfolio-div" style={{ background: "dimgray" }}>
