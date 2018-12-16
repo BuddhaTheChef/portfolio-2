@@ -22,7 +22,8 @@ class PortfolioPage extends Component {
               <h1 className="strip__title" data-name="Lorem">
                 Proj 1
               </h1>
-              <div className="strip__inner-text">
+              {this.state.condition ? 
+              <div className="strip__inner__text">
                 <h2>Project 1</h2>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -31,6 +32,9 @@ class PortfolioPage extends Component {
                   Suscipit soluta omnis quibusdam facilis, illo voluptates odit!
                 </p>
               </div>
+              : 
+              null
+              }
             </div>
           </article>
           <article className="strips__strip">

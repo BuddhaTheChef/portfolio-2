@@ -488,7 +488,7 @@ margin-top: 433px;
 }
 .strips .strip__content:hover:before {
   transform: skew(-30deg) scale(3) translate(0, 0);
-  opacity: 0.1;
+  opacity: 0.4;
 }
 .strips .strip__content:before {
   content: "";
@@ -645,10 +645,27 @@ p {
 
 .strip__toggled {
   background: #663399;
+  background-image: none;
   height: 100vh;
   width: 100vw;
   z-index: 1000;
   display: flex;
+  justify-content: center;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  align-items: center;
+}
+
+.strip__inner__text {
+  position: absolute;
+  z-index: 2000;
+  display: flex;
+  top: 34vh;
+  left: 0;
+  right: 0;
+  font-size: 22px;
+  margin: 0px 258px;
+  color: black;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
