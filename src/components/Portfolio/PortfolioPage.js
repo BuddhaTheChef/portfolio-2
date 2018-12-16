@@ -25,12 +25,14 @@ class PortfolioPage extends Component {
               {this.state.condition ? 
               <div className="strip__inner__text">
                 <h2>Project 1</h2>
-                <p>
+                <div className="inner-modal-div">Insert image or video</div>
+                <p style={{width: '90%', marginTop: '7px'}}>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Officia sapiente deserunt consectetur, quod reiciendis
                   corrupti quo ea aliquid! Repellendus numquam quo, voluptate.
                   Suscipit soluta omnis quibusdam facilis, illo voluptates odit!
                 </p>
+                <p>- React - Angular - Node - Javascript - Firebase</p>
               </div>
               : 
               null

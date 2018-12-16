@@ -658,14 +658,26 @@ p {
 .strip__inner__text {
   position: absolute;
   z-index: 2000;
+  background: whitesmoke;
+  height: 660px;
+  top: 15vh;
   display: flex;
-  top: 34vh;
   left: 0;
   right: 0;
   font-size: 22px;
-  margin: 0px 258px;
+  margin: 0px 20%;
   color: black;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 7px;
+}
+
+.inner-modal-div {
+  background: rgb(66,66,66);
+  width: 90%;
+  height: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
