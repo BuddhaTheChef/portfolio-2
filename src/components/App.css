@@ -415,23 +415,27 @@ margin-top: 433px;
 .strips__strip:nth-child(1) .strip__content {
   background: rgb(3, 188, 139);
   transform: translate3d(-100%, 0, 0);
+  border-top: solid black 3px !important;
   animation-name: strip1;
   animation-delay: 0.1s;
 }
 .strips__strip:nth-child(2) .strip__content {
   background: dimgray;
   transform: translate3d(0, 100%, 0);
+  border-top: solid black 3px !important;
   animation-name: strip2;
   animation-delay: 0.2s;
 }
 .strips__strip:nth-child(3) .strip__content {
   background: #663399;
   transform: translate3d(0, -100%, 0);
+  border-top: solid black 3px !important;
   animation-name: strip3;
   animation-delay: 0.3s;
 }
 .strips__strip:nth-child(4) .strip__content {
   background: dimgray;
+  border-top: solid black 3px !important;
   transform: translate3d(0, 100%, 0);
   animation-name: strip4;
   animation-delay: 0.4s;
@@ -439,12 +443,15 @@ margin-top: 433px;
 .strips__strip:nth-child(5) .strip__content {
   background: rgb(3, 188, 139);
   transform: translate3d(100%, 0, 0);
+  border-top: solid black 3px !important;
   animation-name: strip5;
   animation-delay: 0.5s;
 }
 @media screen and (max-width: 760px) {
   .strips__strip {
     min-height: 20vh;
+    display: flex;
+    flex-direction: column;
   }
   .strips__strip:nth-child(1) {
     top: 0;
@@ -452,21 +459,25 @@ margin-top: 433px;
     width: 100%;
   }
   .strips__strip:nth-child(2) {
+
     top: 20vh;
     left: 0;
     width: 100%;
   }
   .strips__strip:nth-child(3) {
+
     top: 40vh;
     left: 0;
     width: 100%;
   }
   .strips__strip:nth-child(4) {
+
     top: 60vh;
     left: 0;
     width: 100%;
   }
   .strips__strip:nth-child(5) {
+    
     top: 80vh;
     left: 0;
     width: 100%;
@@ -659,7 +670,7 @@ p {
   position: absolute;
   z-index: 2000;
   background: whitesmoke;
-  height: 660px;
+  height: 730px;
   top: 15vh;
   display: flex;
   left: 0;
