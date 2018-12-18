@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import xposure from '../../assets/xposurevid.mp4'
 
 class PortfolioPage extends Component {
 
@@ -25,7 +26,12 @@ class PortfolioPage extends Component {
               {this.state.condition ? 
               <div className="strip__inner__text">
                 <h2>Xposure</h2>
-                <div className="inner-modal-div">Insert image or video</div>
+                <div className="inner-modal-div">
+                <video controls autoPlay className="video-display">
+                  <source src={xposure} type="video/mp4"/>
+            
+                </video>
+                </div>
                 <p style={{width: '90%', marginTop: '7px'}}>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Officia sapiente deserunt consectetur, quod reiciendis

@@ -681,3 +681,8 @@ p {
   align-items: center;
   justify-content: center;
 }
+
+.video-display {
+  width: -webkit-fill-available !important; 
+  height: 420px;
+}
