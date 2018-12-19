@@ -4,21 +4,33 @@ import xposure from '../../assets/xposurevid.mp4'
 class PortfolioPage extends Component {
 
     state = {
-      condition: false
+      condition: false,
+      condition1: false,
+      id: null
     }
 
-  handleClick = () => {
+  handleClick = (event) => {
+    console.log(event.currentTarget.id)
+    this.setState({id: event.currentTarget.id})
     this.setState({
       condition: !this.state.condition
     });
+  }
 
+  handleClick1 = (event) => {
+    console.log(event.currentTarget.id)
+    this.setState({id: event.currentTarget.id})
+    this.setState({
+      condition1: !this.state.condition1
+    });
   }
 
   render() {
+    console.log(this.state.id)
     return (
       <div id="portfolio" className="main-portfolio-div">
         <section className="strips">
-          <article onClick={ this.handleClick } className= { this.state.condition ? "strip__toggled" : "strips__strip" }>
+          <article id={1} onClick={ this.handleClick } className={ this.state.condition ? "strip__toggled" : "strips__strip" }>
             <div className="strip__content">
               <h1 className="strip__title">
                 Proj 1
@@ -34,7 +46,7 @@ class PortfolioPage extends Component {
                 <p style={{width: '90%', marginTop: '7px'}}>
                 A web app used to showcase your talents by setting up events and getting your name 
                 around also a good place to find events happening in your area.
-                <br />
+                <br/>
                 FEATURES: have a user sign in and have saved content based on the users session, have
                  an event thats been created saved to their profile and upload to newsfeed, able to use
                   on a desktop and is mobile responsive keeping all of the functionality
@@ -46,12 +58,13 @@ class PortfolioPage extends Component {
               }
             </div>
           </article>
-          <article className="strips__strip">
+          <article id={2} onClick={this.handleClick1} className={ this.state.condition1 ? "strip__toggled" : "strips__strip" }>
             <div className="strip__content">
               <h1 className="strip__title">
                 Proj 2
               </h1>
-              <div className="strip__inner-text">
+              {this.state.condition1 ? 
+              <div className="strip__inner__text">
                 <h2>Project 2</h2>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -60,9 +73,12 @@ class PortfolioPage extends Component {
                   Suscipit soluta omnis quibusdam facilis, illo voluptates odit!
                 </p>
               </div>
+              : 
+              null
+              }
             </div>
           </article>
-          <article className="strips__strip">
+          <article className="strips__strip" id={3} onClick={ this.handleClick }>
             <div className="strip__content">
               <h1 className="strip__title">
                 Proj 3
