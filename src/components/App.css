@@ -653,13 +653,23 @@ p {
   margin: 0 0 16px;
 }
 
+@-webkit-keyframes blackWhite {  
+  0% { background-color:rgb(3, 188, 139) }
+  25% { background-color: dimgray; }
+  50% { background-color: #663399; }
+  100% { background-color: rgb(3, 188, 139); }
+}
+
 
 .strip__toggled {
-  background: #663399;
+  background: #663399;   
+  animation-name: blackWhite;  
+  animation-iteration-count: infinite;  
+  animation-duration: 20s; 
   background-image: none;
   height: 100vh;
   z-index: 1000;
-  position: relative;
+  position: fixed;
   display: flex;
   justify-content: center;
   transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
