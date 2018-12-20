@@ -448,10 +448,17 @@ margin-top: 433px;
   animation-delay: 0.5s;
 }
 @media screen and (max-width: 760px) {
+  .strips {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
   .strips__strip {
     min-height: 20vh;
     display: flex;
     flex-direction: column;
+    position: absolute;
   }
   .strips__strip:nth-child(1) {
     top: 0;
