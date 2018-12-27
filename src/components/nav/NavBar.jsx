@@ -8,28 +8,28 @@ class NavBar extends Component {
       <div className="main-div-nav">
         <div className="sub-div-nav">
           <div className="links-div">
-            <p>
+            <p style={{ marginTop: '12px' }}>
               <a href="#home" className="links">
                 Home
               </a>
             </p>
           </div>
           <div className="links-div">
-            <p>
+            <p style={{ marginTop: '12px' }}>
               <a href="#portfolio" className="links">
                 Portfolio
               </a>
             </p>
           </div>
           <div className="links-div">
-            <p>
+            <p style={{ marginTop: '12px' }}>
               <a href="#about" className="links">
                 About
               </a>
             </p>
           </div>
           <div className="links-div">
-            <p>
+            <p style={{ marginTop: '12px' }}>
               <a href="#footer" className="links">
                 Contact
               </a>
