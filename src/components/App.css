@@ -378,10 +378,6 @@ margin-top: 433px;
 
 
 
-
-
-
-
 .strips {
   min-height: 99.7vh;
   text-align: center;
@@ -420,6 +416,7 @@ margin-top: 433px;
   animation-name: strip1;
   animation-delay: 0.1s;
 }
+
 .strips__strip:nth-child(2) .strip__content {
   background: dimgray;
   transform: translate3d(0, 100%, 0);
@@ -427,6 +424,7 @@ margin-top: 433px;
   animation-name: strip2;
   animation-delay: 0.2s;
 }
+
 .strips__strip:nth-child(3) .strip__content {
   background: #663399;
   transform: translate3d(0, -100%, 0);
@@ -434,6 +432,7 @@ margin-top: 433px;
   animation-name: strip3;
   animation-delay: 0.3s;
 }
+
 .strips__strip:nth-child(4) .strip__content {
   background: dimgray;
   border-top: solid black 3px !important;
@@ -448,6 +447,24 @@ margin-top: 433px;
   animation-name: strip5;
   animation-delay: 0.5s;
 }
+
+.strips__strip:nth-child(1) .strip__content:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.strips__strip:nth-child(2) .strip__content:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.strips__strip:nth-child(3) .strip__content:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.strips__strip:nth-child(4) .strip__content:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.strips__strip:nth-child(5) .strip__content:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+
 @media screen and (max-width: 760px) {
   .strips {
     position: relative;
@@ -507,7 +524,7 @@ margin-top: 433px;
 }
 .strips .strip__content:hover:before {
   transform: skew(-30deg) scale(3) translate(0, 0);
-  opacity: 0.4;
+  opacity: 0.1;
 }
 .strips .strip__content:before {
   content: "";
