@@ -15,6 +15,10 @@ class PortfolioPage extends Component {
       condition8: false,
       condition9: false,
       condition10: false,
+      condition11: false,
+      condition12: false,
+      condition13: false,
+      condition14: false,
       id: null
     }
 
@@ -100,6 +104,38 @@ class PortfolioPage extends Component {
     this.setState({id: event.currentTarget.id})
     this.setState({
       condition10: !this.state.condition10
+    });
+  }
+
+  handleClick11 = (event) => {
+    console.log(event.currentTarget.id)
+    this.setState({id: event.currentTarget.id})
+    this.setState({
+      condition11: !this.state.condition11
+    });
+  }
+
+  handleClick12 = (event) => {
+    console.log(event.currentTarget.id)
+    this.setState({id: event.currentTarget.id})
+    this.setState({
+      condition12: !this.state.condition12
+    });
+  }
+
+  handleClick13 = (event) => {
+    console.log(event.currentTarget.id)
+    this.setState({id: event.currentTarget.id})
+    this.setState({
+      condition13: !this.state.condition13
+    });
+  }
+
+  handleClick14 = (event) => {
+    console.log(event.currentTarget.id)
+    this.setState({id: event.currentTarget.id})
+    this.setState({
+      condition14: !this.state.condition14
     });
   }
 
@@ -344,12 +380,13 @@ class PortfolioPage extends Component {
                }
             </div>
           </article>
-          <article className="strips__strip">
+          <article onClick={ this.handleClick11 } className={ this.state.condition11 ? "strip__toggled" : "strips__strip" }>
             <div className="strip__content">
               <h1 className="strip__title">
                 Proj 12
               </h1>
-              <div className="strip__inner-text">
+              {this.state.condition11 ? 
+              <div className="strip__inner__text">
                 <h2>Project 12</h2>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -358,14 +395,18 @@ class PortfolioPage extends Component {
                   Suscipit soluta omnis quibusdam facilis, illo voluptates odit!
                 </p>
               </div>
+               :
+               null
+               }
             </div>
           </article>
-          <article className="strips__strip">
+          <article onClick={ this.handleClick12 } className={ this.state.condition12 ? "strip__toggled" : "strips__strip" }>
             <div className="strip__content">
               <h1 className="strip__title">
                 Proj 13
               </h1>
-              <div className="strip__inner-text">
+              {this.state.condition12 ? 
+              <div className="strip__inner__text">
                 <h2>Project 13</h2>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -374,14 +415,18 @@ class PortfolioPage extends Component {
                   Suscipit soluta omnis quibusdam facilis, illo voluptates odit!
                 </p>
               </div>
+               :
+               null
+               }
             </div>
           </article>
-          <article className="strips__strip">
+          <article onClick={ this.handleClick13 } className={ this.state.condition13 ? "strip__toggled" : "strips__strip" }>
             <div className="strip__content">
               <h1 className="strip__title">
                 Proj 14
               </h1>
-              <div className="strip__inner-text">
+              {this.state.condition13 ? 
+              <div className="strip__inner__text">
                 <h2>Project 14</h2>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -390,14 +435,18 @@ class PortfolioPage extends Component {
                   Suscipit soluta omnis quibusdam facilis, illo voluptates odit!
                 </p>
               </div>
+               :
+               null
+               }
             </div>
           </article>
-          <article className="strips__strip">
+          <article onClick={ this.handleClick14 } className={ this.state.condition14 ? "strip__toggled" : "strips__strip" }>
             <div className="strip__content">
               <h1 className="strip__title">
                 Proj 15
               </h1>
-              <div className="strip__inner-text">
+              {this.state.condition14 ? 
+              <div className="strip__inner__text">
                 <h2>Project 15</h2>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -406,6 +455,9 @@ class PortfolioPage extends Component {
                   Suscipit soluta omnis quibusdam facilis, illo voluptates odit!
                 </p>
               </div>
+               :
+               null
+               }
             </div>
           </article>
         </section>
