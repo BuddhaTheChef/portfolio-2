@@ -14,6 +14,7 @@ class PortfolioPage extends Component {
       condition7: false,
       condition8: false,
       condition9: false,
+      condition10: false,
       id: null
     }
 
@@ -93,6 +94,15 @@ class PortfolioPage extends Component {
       condition9: !this.state.condition9
     });
   }
+
+  handleClick10 = (event) => {
+    console.log(event.currentTarget.id)
+    this.setState({id: event.currentTarget.id})
+    this.setState({
+      condition10: !this.state.condition10
+    });
+  }
+
 
 
   render() {
@@ -314,12 +324,13 @@ class PortfolioPage extends Component {
         </section>
 
         <section className="strips">
-          <article className="strips__strip">
+          <article onClick={ this.handleClick10 } className={ this.state.condition10 ? "strip__toggled" : "strips__strip" }>
             <div className="strip__content">
               <h1 className="strip__title">
                 Proj 11
               </h1>
-              <div className="strip__inner-text">
+              {this.state.condition10 ? 
+              <div className="strip__inner__text">
                 <h2>Project 11</h2>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -328,6 +339,9 @@ class PortfolioPage extends Component {
                   Suscipit soluta omnis quibusdam facilis, illo voluptates odit!
                 </p>
               </div>
+               :
+               null
+               }
             </div>
           </article>
           <article className="strips__strip">
