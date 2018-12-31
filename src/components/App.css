@@ -338,15 +338,24 @@ margin-top: 433px;
 .footer-div {
   height: 310px;
   background-color: rgb(3, 188, 139);
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+.footer-inner {
+  display: flex;
 }
 
 .icon-finder-main-div {
   display: flex;
   justify-content: space-between;
-  width: 400px;
+  width: 339px;
   float: right;
   padding: 38px;
   margin-top: 164px;
+  align-self: center;
 }
 
 .icon-finder {
@@ -372,9 +381,7 @@ margin-top: 433px;
   font-style: oblique;
 }
 
-
-
-
+/* ///////////////////////////////////// Portfolio divs ////////////////////////////////////////// */
 
 
 
@@ -734,4 +741,40 @@ p {
 .video-display {
   width: -webkit-fill-available !important; 
   height: 420px;
+}
+
+
+
+/* //////////Media Queries///////////// */
+
+
+
+@media only screen and (max-width: 813px) {
+  .links-div {
+    width: 27px;
+    height: 24px;
+  }
+  .links-div::after {
+    border-width: 17px;
+  }
+  .links-div:hover {
+    width: 105%;
+    height: 24px;
+  }
+  .landing-page-main-title {
+    font-size: 100px;
+  }
+  .footer-div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 74%;
+  }
+  .footer-inner {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -173px;
+  flex-direction: column;
+  }
 }

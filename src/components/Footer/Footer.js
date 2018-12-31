@@ -7,7 +7,7 @@ import website from "../../assets/website-copy.svg";
 
 const Footer = () => (
   <footer id="footer" className="footer-div">
-    <div style={{ display: "-webkit-inline-box" }}>
+    <div className="footer-inner">
       <div style={{ width: "fit-content", maxWidth: "333px" }}>
         <h2 className="footer-title">Contact Me</h2>
         <div className="footer-content-div">
